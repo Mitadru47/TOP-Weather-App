@@ -22,8 +22,8 @@ body{
 
     border: 1px solid blue;
 
-    width: 70vw;
-    height: 350px;
+    /* width: 70vw; */
+    /* height: 350px; */
 
     display: flex;
 
@@ -38,7 +38,7 @@ body{
 
 .location{
 
-    width: 25%;
+    width: 250px;
 
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ body{
 
 .current{
 
-    width: 75%;
+    /* width: 75%; */
 
     display: flex;
     flex-direction: column;
@@ -126,7 +126,10 @@ body{
     /* border: 1px solid orangered; */
 }
 
-.condition{
+#condition{
+
+    margin-top: 0px;
+    padding-top: 0px;
 
     display: flex;
 }
@@ -152,19 +155,6 @@ img{
     padding-left: 0px;
 }
 
-.tempInfo{
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: end;
-}
-
-.tempInfo div{
-
-    /* border: 1px solid goldenrod ; */
-}
-
 #temp{
 
     margin-bottom: 0px;
@@ -188,7 +178,22 @@ img{
     font-size: 0.8rem;
 }
 
+.tempInfo{
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: end;
+}
+
+.tempInfo div{
+
+    /* border: 1px solid goldenrod ; */
+}
+
 #feelsLike{
+
+    padding-right: 15px;
     font-size: 0.8rem;
 }
 
@@ -196,6 +201,36 @@ img{
 
     display: flex;
     border: 1px solid burlywood;
+}
+
+.tiles{
+
+    border: 1px solid burlywood;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.labels{
+
+    width: 100px;
+    font-size: 0.75rem;
+
+    text-align: end;
+}
+
+.stat{
+
+    padding-top: 40px;
+    font-size: 1.75rem;
+}
+
+#windSpeed, #windDirection, #humidity, #uv{
+    
+    text-align: center;
+    padding-top: 40px;   
 }
 
 .current .sectionB{
