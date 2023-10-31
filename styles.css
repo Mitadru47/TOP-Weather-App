@@ -22,13 +22,16 @@ body{
 
     border: 1px solid blue;
 
-    width: 80vw;
+    width: 70vw;
     height: 350px;
 
     display: flex;
+
+    gap: 5px;
+    padding: 5px;
 }
 
-.location, .current, .condition{
+.location, .current{
 
     border: 1px solid purple;
 }
@@ -51,7 +54,7 @@ body{
 
 .location .sectionA, .location .sectionB{
 
-    /* border: 1px solid skyblue; */
+    border: 1px solid skyblue;
 }
 
 #name{
@@ -73,8 +76,136 @@ body{
 
 #coordinates{
 
-    /* border: 1px solid pink; */
+    border: 1px solid pink;
     font-size: 0.8rem;
+}
 
-    /* padding-left: 10px; */
+.current{
+
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.current div{
+
+    margin: 5px;
+    padding: 5px;
+}
+
+.current .sectionA, .current .sectionB{
+
+    border: 1px solid skyblue;
+}
+
+.current .sectionB .sideA, .current .sectionB .sideB{
+
+    border: 1px solid lawngreen;
+}
+
+.current .sectionA{
+
+    display: flex;
+    /* height: 300px; */
+}
+
+.current .sectionA .sideA{
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border: 1px solid burlywood;
+}
+
+.condition, .tempInfo{
+    /* border: 1px solid orangered; */
+}
+
+.condition{
+
+    display: flex;
+}
+
+.condition div{
+
+    /* border: 1px solid goldenrod; */
+}
+
+#icon{
+    padding-right: 0px;
+}
+
+img{
+
+    /* border: 1px solid goldenrod; */
+    height: 50px;
+}
+
+#misc{
+
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.tempInfo{
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: end;
+}
+
+.tempInfo div{
+
+    /* border: 1px solid goldenrod ; */
+}
+
+#temp{
+
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+    margin-left: 0px;
+    padding-left: 0px;
+
+    font-size: 2rem;
+}
+
+#text{
+
+    margin-top: 0px;
+    
+    margin-left: 0px;
+    
+    padding-top: 0px;
+    padding-left: 5px;
+
+    font-size: 0.8rem;
+}
+
+#feelsLike{
+    font-size: 0.8rem;
+}
+
+.current .sectionA .sideB{
+
+    display: flex;
+    border: 1px solid burlywood;
+}
+
+.current .sectionB{
+
+    display: flex;
+    justify-content: end;
+}
+
+#last_updated{
+
+    border: 1px solid pink;
+    font-size: 0.8rem;
 }
