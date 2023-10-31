@@ -1,13 +1,13 @@
 html{
 
-    margin: 5px;
-    border: 1px solid red;
+    /* margin: 5px; */
+    /* border: 1px solid red; */
 }
 
 body{
 
-    padding: 5px;
-    border: 1px solid green;
+    margin: 0px;
+    /* border: 1px solid green; */
 
     height: 100vh;
     
@@ -16,24 +16,79 @@ body{
 
     justify-content: center;
     align-items: center;
+
+    font-family: 'Titillium Web', sans-serif;
+    /* background-color: #FCFFA6; */
+}
+
+#title{
+
+    font-size: 5rem;
+    padding-bottom: 50px;
+}
+
+.input-container{
+
+    border: 2px dashed black;
+    border-radius: 10px;
+
+    display: flex;
+
+    padding: 5px 35vw;
+    gap: 5px;
+}
+
+input{
+
+    font-size: 1rem;
+    width: 200px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    padding: 3px 15px;
+
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #CBFFA9;
+}
+
+button{
+
+    font-size: 1rem;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    padding: 3px 15px;
+
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #B2A4FF;
+}
+
+button:hover{
+
+    color: white;
+    background-color: black;
 }
 
 .primary-container{
 
-    border: 1px solid blue;
+    /* border: 2px solid black; */
+    border-radius: 10px;
 
     /* width: 70vw; */
     /* height: 350px; */
 
-    display: flex;
+    display: none;
 
     gap: 5px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .location, .current{
 
-    border: 1px solid purple;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .location{
@@ -44,6 +99,7 @@ body{
     flex-direction: column;
 
     justify-content: space-between;
+    background-color: #86C8BC;
 }
 
 .location div{
@@ -88,6 +144,7 @@ body{
     flex-direction: column;
 
     justify-content: space-between;
+    background-color: #CEEDC7;
 }
 
 .current div{
@@ -116,6 +173,8 @@ body{
 
     border: 1px solid black;
     border-radius: 10px;
+
+    background-color: #FFDCA9;
 }
 
 .condition, .tempInfo{
@@ -136,6 +195,8 @@ body{
 }
 
 #icon{
+
+    padding-top: 10px;
     padding-right: 0px;
 }
 
@@ -165,7 +226,6 @@ img{
 #text{
 
     margin-top: 0px;
-    
     margin-left: 0px;
     
     padding-top: 0px;
@@ -197,7 +257,7 @@ img{
 
     display: flex;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
 }
 
@@ -210,6 +270,7 @@ img{
     flex-direction: column;
 
     justify-content: space-between;
+    background-color: #FFF6BD;
 }
 
 .labels{
