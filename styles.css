@@ -54,7 +54,7 @@ body{
 
 .location .sectionA, .location .sectionB{
 
-    border: 1px solid skyblue;
+    /* border: 1px solid skyblue; */
 }
 
 #name{
@@ -76,7 +76,7 @@ body{
 
 #coordinates{
 
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     font-size: 0.8rem;
 }
 
@@ -98,12 +98,7 @@ body{
 
 .current .sectionA, .current .sectionB{
 
-    border: 1px solid skyblue;
-}
-
-.current .sectionB .sideA, .current .sectionB .sideB{
-
-    border: 1px solid lawngreen;
+    /* border: 1px solid skyblue; */
 }
 
 .current .sectionA{
@@ -119,7 +114,8 @@ body{
 
     justify-content: space-between;
 
-    border: 1px solid burlywood;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .condition, .tempInfo{
@@ -200,12 +196,15 @@ img{
 .current .sectionA .sideB{
 
     display: flex;
-    border: 1px solid burlywood;
+
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .tiles{
 
-    border: 1px solid burlywood;
+    border: 1px solid black;
+    border-radius: 10px;
     
     display: flex;
     flex-direction: column;
@@ -241,6 +240,6 @@ img{
 
 #last_updated{
 
-    border: 1px solid pink;
+    /* border: 1px solid black; */
     font-size: 0.8rem;
 }
