@@ -10,7 +10,7 @@ goButton.addEventListener("click", () => {
 
     if(city !== ""){
 
-        const baseURL = "http://api.weatherapi.com/v1";
+        const baseURL = "https://api.weatherapi.com/v1";
         const apiMethod = "/current.json";
 
         const APIKEY = "8c464bb088c44138809151352232810";
@@ -91,7 +91,7 @@ function buildApp(responseBody){
 
 function initializeApp(){
 
-    const baseURL = "http://api.weatherapi.com/v1";
+    const baseURL = "https://api.weatherapi.com/v1";
     const apiMethod = "/current.json";
 
     const APIKEY = "8c464bb088c44138809151352232810";
