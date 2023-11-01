@@ -71,6 +71,29 @@ button:hover{
     background-color: black;
 }
 
+#loading-component div{
+
+    border: 1px  solid black;
+    border-radius: 10px;
+
+    margin: 5px;
+    padding: 5px 15px;
+
+    height: 273px;
+    width: 1040px;
+
+    margin-top: 10px;
+
+    text-align: center;
+    line-height: 273px;
+
+    font-size: 1.5rem;
+    font-family: 'Titillium Web', sans-serif;
+
+    /* background-color: #FF8787; */
+    display: none;
+}
+
 .primary-container{
 
     /* border: 2px solid black; */

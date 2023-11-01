@@ -10,6 +10,14 @@ goButton.addEventListener("click", () => {
 
     if(city !== ""){
 
+        let primaryContainer = document.querySelector(".primary-container");
+        primaryContainer.style.display = "none";
+
+        let loader = document.querySelector("#loading-component div");
+
+        loader.innerText = "Loading...";
+        loader.style.display = "block";
+
         const baseURL = "https://api.weatherapi.com/v1";
         const apiMethod = "/current.json";
 
@@ -25,7 +33,7 @@ goButton.addEventListener("click", () => {
             .then((response) => {
 
                 // console.log(response);
-
+                
                 statusCode = response.status;
                 return response.json();
             })
@@ -33,16 +41,25 @@ goButton.addEventListener("click", () => {
             .then((jsonResponse) => { 
 
                 if(statusCode == "200"){
+
                     buildApp(jsonResponse);
+
+                    let loader = document.querySelector("#loading-component div");
+                    loader.style.display = "none";
 
                 } else {
 
-                    let primaryContainer = document.querySelector(".primary-container");
-                    primaryContainer.style.display = "none";
+                    let loader = document.querySelector("#loading-component div");
+                    loader.innerText = "Try Again!";
                 }
             })
 
             .catch((error) => console.log(error));   
+   
+    } else {
+
+        let loader = document.querySelector("#loading-component div");
+        loader.style.display = "none";
     }
 
 }, true);
@@ -91,6 +108,9 @@ function buildApp(responseBody){
 
 function initializeApp(){
 
+    let loader = document.querySelector("#loading-component div");
+    loader.style.display = "block";
+
     const baseURL = "https://api.weatherapi.com/v1";
     const apiMethod = "/current.json";
 
@@ -112,12 +132,16 @@ function initializeApp(){
         .then((jsonResponse) => { 
 
             if(statusCode == "200"){
+
                 buildApp(jsonResponse);
+
+                let loader = document.querySelector("#loading-component div");
+                loader.style.display = "none";
 
             } else {
 
-                let primaryContainer = document.querySelector(".primary-container");
-                primaryContainer.style.display = "none";
+                let loader = document.querySelector("#loading-component div");
+                loader.innerText = "Try Again!";
             }
         })
 
